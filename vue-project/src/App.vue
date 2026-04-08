@@ -1,11 +1,26 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div id="app">
+    <CategoryList />
+  </div>
 </template>
 
-<style scoped></style>
+<script>
+import CategoryList from './components/CategoryList.vue';
+
+export default {
+  name: 'App',
+  components: { CategoryList }
+};
+</script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fa;
+}
+</style>
