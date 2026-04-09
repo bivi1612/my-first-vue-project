@@ -1,16 +1,13 @@
 <template>
   <div id="app">
-    <CategoryList />
+    <router-view />
   </div>
 </template>
 
 <script>
-import CategoryList from './components/CategoryList.vue';
-
 export default {
-  name: 'App',
-  components: { CategoryList }
-};
+  name: 'App'
+}
 </script>
 
 <style>
@@ -21,6 +18,7 @@ export default {
 }
 
 body {
-  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
 }
 </style>
